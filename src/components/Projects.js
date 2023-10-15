@@ -7,31 +7,31 @@ export default function Projects() {
       <h3 className="sub-topic">My Projects</h3>
       <div className="grid-container">
         <div className="project">
-          <a href="">
-            <img src={screenshot} className="project-img" alt="" />
+          <a href="https://lively-strudel-dd7f7a.netlify.app/" target="_blank" rel="noreferrer">
+            <img src={screenshot} className="project-img"  />
             <br />
             <span>Opay Demo</span>
           </a>
         </div>
-        <div className="project">
-          <a href="">
-            <img src={screenshot} className="project-img" alt="" />
+        <div className="project" >
+          <a href="https://clinquant-alpaca-76679d.netlify.app/#" target="_blank" rel="noreferrer">
+            <img src={screenshot} className="project-img"  />
             <br />
-            <span>Opay Demo</span>
+            <span>Real Estate</span>
           </a>
         </div>
         <div className="project">
-          <a href="">
-            <img src={screenshot} className="project-img" alt="" />
+          <a href="https://stellar-croissant-74a254.netlify.app/" target="_blank" rel="noreferrer">
+            <img src={screenshot} className="project-img"  />
             <br />
-            <span className="project-name">Opay Demo</span>
+            <span className="project-name">Loan calculator</span>
           </a>
         </div>
         <div className="project">
-          <a href="">
-            <img src={screenshot} className="project-img" alt="" />
+          <a href="https://roaring-valkyrie-539f49.netlify.app/" target="_blank" rel="noreferrer">
+            <img src={screenshot} className="project-img"  />
             <br />
-            <span>Opay Demo</span>
+            <span>BMI calculator</span>
           </a>
         </div>
       </div>
