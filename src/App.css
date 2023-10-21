@@ -3,13 +3,13 @@
   margin: 0;
 }
 :root{
-  --light: #41733a;
+  --light: #f4dbba;
   --dark: #1a3d00;
   --white: #eeeeee;
 }
 a{
   text-decoration: none;
-  color: var(--white);
+  color: var(--dark);
 }
 body{
   background-color: var(--light);
@@ -27,9 +27,7 @@ body{
   margin-bottom: 10px;
   color: var(--dark);
 }
-.front-end{
-  color: var(--white);
-}
+
 .menu{
   display: flex;
   justify-content: space-around;
@@ -59,6 +57,9 @@ body{
   color: var(--dark);
   /* text-shadow: 1px -1px 4px var(--dark); */
 }
+.technologies{
+  list-style: circle;
+}
 .grid-container{
   display: grid;
   grid-template-columns: auto auto;
@@ -84,9 +85,11 @@ body{
   background-color: var(--dark);
   padding: 1.25rem;
   margin: 0.625rem 0;
+  margin-bottom: 0;
 }
 .social-icon{
   width: 3.125rem;
   height: 3.125rem;
+  color: var(--white);
 }
 
