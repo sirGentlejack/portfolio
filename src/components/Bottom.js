@@ -5,7 +5,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Bottom() {
   return (
-    <div className="footer">
+    <div className="footer" id="contact">
       <div>
         <a href="https://twitter.com/gentlejack_b?s=21" target="_blank" rel="noreferrer">
           <FaSquareXTwitter className="social-icon" />

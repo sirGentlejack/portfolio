@@ -27,7 +27,17 @@ body{
   margin-bottom: 10px;
   color: var(--dark);
 }
-
+.cv-section{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.cv-btn{
+  border: 2px solid var(--dark);
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 6px 8px;
+}
 .menu{
   display: flex;
   justify-content: space-around;
@@ -45,6 +55,7 @@ body{
   padding: 3px;
   border-width: 3px 1.5px 0px 1.5px;
 }
+
 .sub-topic{
   font-size: 25px;
   margin: 5px 0 5px 20px;
@@ -57,15 +68,20 @@ body{
   color: var(--dark);
   /* text-shadow: 1px -1px 4px var(--dark); */
 }
+.tech-skills{
+  display: flex;
+  color: var(--dark);
+}
 .technologies{
-  list-style: circle;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px 30px;
 }
 .grid-container{
   display: grid;
   grid-template-columns: auto auto;
   margin: 10px 30px 30px 30px;
   gap: 10px 50px ;
-  
 }
 .project-img{
   width: 100px;
@@ -78,6 +94,10 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--dark);
+}
+.project-name{
+  color: var(--white);
 }
 .footer{
   display: flex;

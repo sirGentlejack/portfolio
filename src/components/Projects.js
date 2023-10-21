@@ -4,20 +4,20 @@ import screenshot from "../images/screenshot.png";
 export default function Projects() {
   return (
     <div>
-      <h3 className="sub-topic">My Projects</h3>
+      <h3 className="sub-topic" id="projects">My Projects</h3>
       <div className="grid-container">
         <div className="project">
           <a href="https://lively-strudel-dd7f7a.netlify.app/" target="_blank" rel="noreferrer">
             <img src={screenshot} className="project-img" alt="screenshot showing project" />
             <br />
-            <span>Opay Demo</span>
+            <span className="project-name">Opay Demo</span>
           </a>
         </div>
         <div className="project" >
           <a href="https://clinquant-alpaca-76679d.netlify.app/#" target="_blank" rel="noreferrer">
             <img src={screenshot} className="project-img" alt="screenshot showing project" />
             <br />
-            <span>Real Estate</span>
+            <span className="project-name">Real Estate</span>
           </a>
         </div>
         <div className="project">
@@ -31,7 +31,7 @@ export default function Projects() {
           <a href="https://roaring-valkyrie-539f49.netlify.app/" target="_blank" rel="noreferrer">
             <img src={screenshot} className="project-img" alt="screenshot showing project" />
             <br />
-            <span>BMI calculator</span>
+            <span className="project-name">BMI calculator</span>
           </a>
         </div>
       </div>
