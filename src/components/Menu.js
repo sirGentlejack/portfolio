@@ -1,24 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Menu() {
   return (
     <div>
       <ul className="menu">
         <li>
-          <Link to="/#about">
+          <a href="/#about" target="_self"
+          rel="noreferrer">
             <b>About</b>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/#projects">
+          <a href="/#projects" target="_self"
+          rel="noreferrer">
             <b>Projects</b>
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/#contact">
+          <a href="/#contact" target="_self"
+          rel="noreferrer">
             <b>Contact</b>
-          </Link>
+          </a>
         </li>
       </ul>
       <hr />

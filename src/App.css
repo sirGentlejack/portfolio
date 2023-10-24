@@ -15,22 +15,25 @@ body{
   background-color: var(--light);
 }
 .name{
-  font-size: 35px;
+  font-size: 2.188rem;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 0.938rem;
+  margin-bottom: 0.313rem;
   color: var(--dark);
 }
+.name2{
+  display: none;
+}
 .profession{
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   color: var(--dark);
 }
 .cv-section{
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 0.625rem;
 }
 .cv-btn{
   border: 2px solid var(--dark);
@@ -57,16 +60,15 @@ body{
 }
 
 .sub-topic{
-  font-size: 25px;
+  font-size: 1.563rem;
   margin: 5px 0 5px 20px;
   color: var(--dark);
 }
-.interest-content{
+.content{
   margin: 0 12px 20px 12px;
   text-indent: 2em;
   font-size: 20px;
   color: var(--dark);
-  /* text-shadow: 1px -1px 4px var(--dark); */
 }
 .tech-skills{
   display: flex;
@@ -98,6 +100,7 @@ body{
 }
 .project-name{
   color: var(--white);
+  text-align: center;
 }
 .footer{
   display: flex;
@@ -113,3 +116,53 @@ body{
   color: var(--white);
 }
 
+@media screen and (min-width: 480px) {
+  .name{
+    font-size: 3.188rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .profession{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  .tech-skills{
+    margin-left: 30px;
+  }
+  .grid-container{
+    grid-template-columns: auto auto auto;
+    margin: 10px 20px 20px 20px;
+    gap: 10px 40px ;
+  }
+}
+@media screen and (min-width: 659px) {
+  .name2{
+    display: inline-block;
+    margin-top: 1.25rem;
+  }
+  .menu{
+    font-size: 1.3rem;
+  }
+  .sub-topic{
+    font-size: 1.89rem;
+    margin: 5px 0 5px 50px;
+  }
+  .content{
+    margin: 0 20px 20px 20px;
+    text-indent: 4em;
+    font-size: 1.563rem;
+  }
+  .tech-skills{
+    display: flex;
+    font-size: 1.563rem;
+    margin-left: 50px;
+  }
+  .grid-container{
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (min-width: 1005px) {
+  .grid-container{
+    grid-template-columns: auto auto auto auto auto;
+  }
+}

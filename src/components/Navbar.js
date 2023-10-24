@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <div>
-      <h1 className="name">Fagbemi Collins</h1>
+      <h1 className="name">Fagbemi <span className="name2">Ilemobayo</span> Collins</h1>
       <p className="profession">
         <span className="front-end">Front-End</span> Developer
       </p>
@@ -14,7 +14,7 @@ export default function Navbar() {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="cv-btn">CV Download</span>
+          <span className="cv-btn">Open CV</span>
         </a>
         
       </div>

@@ -1,5 +1,11 @@
 import React from "react";
-import screenshot from "../images/screenshot.png";
+import Opay from "../images/OpayScreenshot.png";
+import RealEstate from "../images/RealEstateScreenshot.png";
+import LoanCal from "../images/LoanCalScreenshot.png";
+import BMI from "../images/BMIScreenshot.png";
+import Airbnb from "../images/AirbnbScreenshot.png";
+import Flak from "../images/FlakScreenshot.png";
+
 
 export default function Projects() {
   return (
@@ -8,33 +14,48 @@ export default function Projects() {
       <div className="grid-container">
         <div className="project">
           <a href="https://lively-strudel-dd7f7a.netlify.app/" target="_blank" rel="noreferrer">
-            <img src={screenshot} className="project-img" alt="screenshot showing project" />
+            <img src={Opay} className="project-img" alt="screenshot showing project" />
             <br />
-            <span className="project-name">Opay Demo</span>
+            <span className="project-name"><b>Opay Demo</b></span>
           </a>
         </div>
         <div className="project" >
           <a href="https://clinquant-alpaca-76679d.netlify.app/#" target="_blank" rel="noreferrer">
-            <img src={screenshot} className="project-img" alt="screenshot showing project" />
+            <img src={RealEstate} className="project-img" alt="screenshot showing project" />
             <br />
-            <span className="project-name">Real Estate</span>
+            <span className="project-name"><b>Real Estate</b></span>
           </a>
         </div>
         <div className="project">
           <a href="https://stellar-croissant-74a254.netlify.app/" target="_blank" rel="noreferrer">
-            <img src={screenshot} className="project-img" alt="screenshot showing project" />
+            <img src={LoanCal} className="project-img" alt="screenshot showing project" />
             <br />
-            <span className="project-name">Loan calculator</span>
+            <span className="project-name"><b>Loan calculator</b></span>
           </a>
         </div>
         <div className="project">
           <a href="https://roaring-valkyrie-539f49.netlify.app/" target="_blank" rel="noreferrer">
-            <img src={screenshot} className="project-img" alt="screenshot showing project" />
+            <img src={BMI} className="project-img" alt="screenshot showing project" />
             <br />
-            <span className="project-name">BMI calculator</span>
+            <span className="project-name"><b>BMI calculator</b></span>
+          </a>
+        </div>
+        <div className="project">
+          <a href="https://beautiful-parfait-5775d5.netlify.app/" target="_blank" rel="noreferrer">
+            <img src={Airbnb} className="project-img" alt="screenshot showing project" />
+            <br />
+            <span className="project-name"><b>Airbnb Demo</b></span>
+          </a>
+        </div>
+        <div className="project">
+          <a href="https://unrivaled-cocada-faf0ee.netlify.app/asset/enroll/" target="_blank" rel="noreferrer">
+            <img src={Flak} className="project-img" alt="screenshot showing project" />
+            <br />
+            <span className="project-name"><b>Flak skill A.</b></span>
           </a>
         </div>
       </div>
     </div>
   );
 }
+// 
