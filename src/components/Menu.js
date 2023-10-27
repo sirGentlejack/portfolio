@@ -7,7 +7,7 @@ export default function Menu() {
         <li>
           <a href="/#about" target="_self"
           rel="noreferrer">
-            <b>About</b>
+            <b>About Me</b>
           </a>
         </li>
         <li>

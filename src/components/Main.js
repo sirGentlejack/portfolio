@@ -29,21 +29,23 @@ export default function Main() {
         </div>
       </div>
       <div>
-        <h3 className="sub-topic" id="about">About</h3>
+        <h3 className="sub-topic" id="about">About Me</h3>
         <p className="content">
           I am an individual with a diverse range of interests and experiences.
           My passion for learning and curiosity has driven me to explore various
           aspects of life. I enjoy delving into different cultures, cuisines,
           and languages, which has not only broadened my horizons but also
-          enriched my understanding of the world.
+          enriched my global perspective.
         </p>
         <p className="content">
-          Professionally, I'm a Front-End Developer which i gained interest year
-          2022 . I am known for my strong work ethic and dedication to achieving
+          Professionally, my journey as a Front-End Developer began in 2022. 
+          I am known for my strong work ethic and dedication to achieving
           goals and solving challenges. I take pride in my ability to
-          collaborate effectively with others and to adapt to new situations and
-          technologies. Outside of work, I am an avid Fashion Designer, which
-          bring balance to my life and help me unwind.
+          collaborate effectively with teams and to adapt to new environment and
+          technologies.</p>
+          <p className="content">
+          Beyond the realm of coding, I am a devoted Fashion Designer, which
+          bring balance to my life, offering a channel for relaxation and creativity.
         </p>
         <p className="content">
           In summary, I am a curious and dedicated individual with a passion for

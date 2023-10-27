@@ -103,11 +103,20 @@ body{
   text-align: center;
 }
 .footer{
+  background-color: var(--dark);
+}
+.contact_me{
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  margin-top: 8px;
+}
+.footer_icons{
   display: flex;
   justify-content: space-around;
-  background-color: var(--dark);
   padding: 1.25rem;
   margin: 0.625rem 0;
+  margin-top: 2px;
   margin-bottom: 0;
 }
 .social-icon{
