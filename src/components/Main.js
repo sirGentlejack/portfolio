@@ -15,16 +15,16 @@ export default function Main() {
         <h3 className="sub-topic">Technologies</h3>
         <div className="tech-skills">
           <ul className="technologies">
+          <li>Reactjs</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>javaScript</li>
-            <li>Reactjs</li>
           </ul>
           <ul className="technologies">
             <li>TailwindCSS</li>
             <li>Git</li>
             <li>Slack</li>
-            <li>Figma</li>
+            <li>Figma (UI/UX)</li>
           </ul>
         </div>
       </div>
