@@ -1,8 +1,11 @@
 import React from "react";
+import Me from "../images/lemo_B.png"
 
 export default function Navbar() {
   return (
-    <div>
+    <div >
+      <div className="hero">
+      <div className="hero-section1">
       <h1 className="name">Fagbemi <span className="name2">Ilemobayo</span> Collins</h1>
       <p className="profession">
         <span className="front-end">Front-End</span> Developer
@@ -18,7 +21,11 @@ export default function Navbar() {
         </a>
         
       </div>
-      
+      </div>
+      <div className="hero-section2">
+        <img src={Me} alt="Myself" className="hero-img" />
+      </div>
+      </div>
     </div>
   );
 }

@@ -9,8 +9,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-        <Navbar />
         <Menu />
+        <Navbar />
         <Main />
         <Projects />
         <Bottom />

@@ -3,6 +3,7 @@ import React from "react";
 export default function Menu() {
   return (
     <div>
+      <hr />
       <ul className="menu">
         <li>
           <a href="/#about" target="_self"
