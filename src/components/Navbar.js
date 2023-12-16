@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Menu() {
+export default function Navbar({darkMode, toggleDarkMode}) {
+ 
   return (
-    <div className="navbar">
+    <div className={`navbar ${darkMode ? "dark-mode" : "light-mode" }`}>
       <hr />
       <ul className="menu">
       <li>
@@ -23,6 +24,7 @@ export default function Menu() {
         <Link to="/contact"  className="contacts"> <b>Contact Me</b></Link>
         </li>
       </ul>
+      <button onClick={toggleDarkMode}>{darkMode ? "Light" : "Dark"}</button>
       <hr />
     </div>
   );
