@@ -1,34 +1,9 @@
 import React from "react";
 
-export default function Main() {
-  return (
-    <div>
-      <div>
-        <h3 className="sub-topic">Interest</h3>
-        <p className="content">
-          I am passionate about continuous learning, problem-solving, and
-          contributing to an organisation’s growth while aligning with its
-          values.
-        </p>
-      </div>
-      <div>
-        <h3 className="sub-topic">Technologies</h3>
-        <div className="tech-skills">
-          <ul className="technologies">
-          <li>Reactjs</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javaScript</li>
-          </ul>
-          <ul className="technologies">
-            <li>TailwindCSS</li>
-            <li>Git</li>
-            <li>Slack</li>
-            <li>Figma (UI/UX)</li>
-          </ul>
-        </div>
-      </div>
-      <div>
+export default function AboutMe() {
+    return(
+        <>
+        <div>
         <h3 className="sub-topic" id="about">About Me</h3>
         <p className="content">
           I am an individual with a diverse range of interests and experiences.
@@ -54,6 +29,6 @@ export default function Main() {
           experiences and opportunities that life has to offer.
         </p>
       </div>
-    </div>
-  );
+        </>
+    )
 }

@@ -12,7 +12,7 @@ import Flak from "../images/FlakScreenshot.png";
 export default function Projects() {
   return (
     <div>
-      <h3 className="sub-topic" id="projects">My Projects</h3>
+      <h3 className="sub-topic" id="projects">My Most Recent Apps</h3>
       <div className="grid-container">
         <div className="project">
           <a href="https://opay-mobile-application-look.vercel.app/" target="_blank" rel="noreferrer">

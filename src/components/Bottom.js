@@ -2,11 +2,19 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Bottom() {
   return (
     <div className="footer">
       <h3 className="contact_me sub-topic">Contact Me</h3>
+      <div className="bottom-contact">
+        <h1>Lets talk about your project</h1>
+        <Link to="/contact" className="contacts ">
+          <b>Contact</b>
+        </Link>
+      </div>
+
       <div className="footer_icons" id="contact">
         <div>
           <a
