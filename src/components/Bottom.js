@@ -9,7 +9,7 @@ export default function Bottom() {
     <div className="footer">
       <h3 className="contact_me sub-topic">Contact Me</h3>
       <div className="bottom-contact">
-        <h1>Lets talk about your project</h1>
+        <h1 className="bottom-contact-text">Lets talk about your project</h1>
         <Link to="/contact" className="contacts ">
           <b>Contact</b>
         </Link>

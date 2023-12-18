@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 export default function Navbar({darkMode, toggleDarkMode}) {
  
   return (
-    <div className={`navbar ${darkMode ? "dark-mode" : "light-mode" }`}>
+    <div >
       <hr />
+      <div className={`navbar ${darkMode ? "dark-mode" : "light-mode" }`}>
+      <h1>FIC</h1>
       <ul className="menu">
       <li>
             <Link to="/" ><b>Home</b></Link>
@@ -23,8 +25,13 @@ export default function Navbar({darkMode, toggleDarkMode}) {
         <li>
         <Link to="/contact"  className="contacts"> <b>Contact Me</b></Link>
         </li>
+
       </ul>
-      <button onClick={toggleDarkMode}>{darkMode ? "Light" : "Dark"}</button>
+      <div>
+        <button onClick={toggleDarkMode}>{darkMode ? "Light" : "Dark"}</button>
+        <button>Menu</button>
+        </div>
+        </div>
       <hr />
     </div>
   );
