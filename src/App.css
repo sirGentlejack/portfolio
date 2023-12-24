@@ -35,35 +35,61 @@ body.light-mode {
 body.dark-mode {
   background: var(--dark);
 }
-/* navbar section*/
+/* navbar section*/ */
 .navbar{
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.menu{
-  display: none;
-  justify-content: space-around;
-  padding-bottom: 10px;
-  color: var(--text-color);
-}
+
 .menu > li{
   list-style: none;
   border: 2px solid transparent;
   padding: 3px;
   border-width: 3px 1.5px 0px 1.5px;
+  
 }
 .menu > li:hover{
   border: 2px solid var(--link-color);
   padding: 3px;
   border-width: 3px 1.5px 0px 1.5px;
 }
-.contacts{
+ .contacts{
   border: 1px solid var(--link-color);
   background-color: var(--link-color);
   color: var(--bg-color);
   padding: 3px 8px;
+} 
+.menu-btn{
+  visibility: visible;
+  opacity: 1;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--bg-color);
+  transition: 1s;
+  transform: translateY(-100vh);
+  border: 5px double var(--link-color);
+  border-top: 0px;
+  border-left: 0px;
+  border-radius: 30px 0;
+  z-index: 1;
+}
+.responsive_nav {
+  transform: none;
+}
+.menu_close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 /* hero section */
 .hero{

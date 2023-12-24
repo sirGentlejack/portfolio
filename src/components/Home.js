@@ -21,6 +21,9 @@ export default function Home() {
         <div>
           <h2>Design Website</h2>
         </div>
+        <div>
+          <h2>Web application</h2>
+        </div>
       </div>
       <div>
         <h3 className="sub-topic">Technologies</h3>
