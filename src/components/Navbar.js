@@ -17,7 +17,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
       <hr />
       <div className={`navbar ${darkMode ? "dark-mode" : "light-mode"}`}>
         
-          <a href="#">FIC</a>
+          <a href="#" className="logo">FIC</a>
           <nav ref={navRef}>
             <ul className="menu">
               <li>
@@ -48,10 +48,10 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           </nav>
 
           <button onClick={toggleDarkMode}>
-            {darkMode ? <CiLight /> : <CiDark />}
+            {darkMode ? <CiLight className="theme" /> : <CiDark className="theme"/>}
           </button>
-          <button className="menu-btn">
-            <FiMenu onClick={showNavbar} />
+          <button >
+            <FiMenu className="menu-btn" onClick={showNavbar} />
           </button>
         
       </div>
