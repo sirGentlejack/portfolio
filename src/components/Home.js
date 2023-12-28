@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div> 
+    <div>
       <div>
-      <Hero />
+        <Hero />
       </div>
       <div className="interest">
         <h3 className="sub-topic">Interest</h3>
@@ -17,19 +17,21 @@ export default function Home() {
         </p>
       </div>
       <div>
-      <h3 className="sub-topic">Services</h3>
-        <div>
-          <h2>Design Website</h2>
-        </div>
-        <div>
-          <h2>Web application</h2>
+          <h3 className="sub-topic ">Services</h3>
+        <div className="services">
+          <div className="services-items">
+            <h2>Design Website</h2>
+          </div>
+          <div className="services-items">
+            <h2>Web application</h2>
+          </div>
         </div>
       </div>
       <div>
         <h3 className="sub-topic">Technologies</h3>
         <div className="tech-skills">
           <ul className="technologies">
-          <li>Reactjs</li>
+            <li>Reactjs</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>javaScript</li>
@@ -43,14 +45,19 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <h3 className="sub-topic" id="about">About Me</h3>
+        <h3 className="sub-topic" id="about">
+          About Me
+        </h3>
         <p className="content">
-          Professionally, my journey as a Front-End Developer began in 2022. 
-          I am known for my strong work ethic and dedication to achieving
-          goals and solving challenges. I take pride in my ability to
-          collaborate effectively with teams and to adapt to new environment and
-          technologies.</p>
-          <Link to="/aboutMe" className="read-more">Read more...</Link>
+          Professionally, my journey as a Front-End Developer began in 2022. I
+          am known for my strong work ethic and dedication to achieving goals
+          and solving challenges. I take pride in my ability to collaborate
+          effectively with teams and to adapt to new environment and
+          technologies.
+        </p>
+        <Link to="/aboutMe" className="read-more">
+          Read more...
+        </Link>
       </div>
     </div>
   );

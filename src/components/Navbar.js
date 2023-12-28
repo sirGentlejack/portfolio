@@ -43,7 +43,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             </ul>
 
             <button className="menu-btn menu-close">
-              <TiCancel onClick={showNavbar} />
+              <TiCancel className="menu-btn menu-close" onClick={showNavbar} />
             </button>
           </nav>
 
