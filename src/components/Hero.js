@@ -1,5 +1,5 @@
 import React from "react";
-import Me from "../images/lemo_B.png";
+import Me from "../images/me2.jpg";
 
 export default function Hero() {
   return (
