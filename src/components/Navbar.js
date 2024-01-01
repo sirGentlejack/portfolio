@@ -45,14 +45,61 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             <button className="menu-btn menu-close">
               <TiCancel className="menu-btn menu-close" onClick={showNavbar} />
             </button>
+            <ul className="wide-menu">
+              <li>
+                <Link to="/">
+                  <b>Home</b>
+                </Link>
+              </li>
+              <li>
+                <Link to="/aboutMe">
+                  <b>About Me</b>
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects">
+                  <b>Projects</b>
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="contacts">
+                  <b>Contact Me</b>
+                </Link>
+              </li>
+            </ul>
           </nav>
-
+          
           <button onClick={toggleDarkMode}>
             {darkMode ? <CiLight className="theme" /> : <CiDark className="theme"/>}
           </button>
           <button >
             <FiMenu className="menu-btn" onClick={showNavbar} />
           </button>
+          <ul className="wide-menu">
+              <li>
+                <Link to="/">
+                  <b>Home</b>
+                </Link>
+              </li>
+              <li>
+                <Link to="/aboutMe">
+                  <b>About Me</b>
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects">
+                  <b>Projects</b>
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="contacts">
+                  <b>Contact Me</b>
+                </Link>
+              </li>
+            </ul>
+
+          
+          
         
       </div>
       <hr />

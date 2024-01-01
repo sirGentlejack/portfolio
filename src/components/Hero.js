@@ -3,8 +3,8 @@ import Me from "../images/lemo_B.png";
 
 export default function Hero() {
   return (
-    <div className="hero">
-      <div >
+    <div >
+      <div className="hero">
         <div className="hero-section1">
           <h1 className="name">
             Fagbemi <span className="name2">Ilemobayo</span> Collins
@@ -18,7 +18,7 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="cv-btn">Open CV</span>
+              <span className="cv-btn"><b>Open CV</b></span>
             </a>
           </div>
         </div>

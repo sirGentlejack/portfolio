@@ -8,7 +8,7 @@ export default function Home() {
       <div>
         <Hero />
       </div>
-      <div className="interest">
+      <div className="interest sections">
         <h3 className="sub-topic">Interest</h3>
         <p className="content">
           I am passionate about continuous learning, problem-solving, and
@@ -16,7 +16,7 @@ export default function Home() {
           values.
         </p>
       </div>
-      <div>
+      <div className="service sections">
           <h3 className="sub-topic ">Services</h3>
         <div className="services">
           <div className="services-items">
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="technologies sections">
         <h3 className="sub-topic">Technologies</h3>
         <div className="tech-skills">
           <ul className="technologies">
@@ -38,13 +38,13 @@ export default function Home() {
           </ul>
           <ul className="technologies">
             <li>TailwindCSS</li>
-            <li>Git</li>
+            <li>Git Hub</li>
             <li>Slack</li>
             <li>Figma (UI/UX)</li>
           </ul>
         </div>
       </div>
-      <div>
+      <div className="about sections">
         <h3 className="sub-topic" id="about">
           About Me
         </h3>
