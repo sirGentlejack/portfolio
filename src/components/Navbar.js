@@ -69,7 +69,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             </ul>
           </nav>
           
-          <button onClick={toggleDarkMode}>
+          <button onClick={toggleDarkMode} className="theme-btn">
             {darkMode ? <CiLight className="theme" /> : <CiDark className="theme"/>}
           </button>
           <button >

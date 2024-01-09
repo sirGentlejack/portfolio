@@ -12,12 +12,14 @@
   --bg-color: var(--light);
   --text-color: var(--dark);
   --link-color: var(--dark);
+  transition: 2s;
 }
 
 .dark-mode {
   --bg-color: var(--dark);
   --text-color: var(--light);
   --link-color: var(--white);
+  transition: 2s;
 }
 
 a{
@@ -46,6 +48,10 @@ body.dark-mode {
   font-weight: 800;
   color: var(--text-color);
 }
+.theme:hover{
+  background: var(--text-color);
+  color: var(--bg-color);
+}
 .theme{
   width: 40px;
   height: 40px;
@@ -53,8 +59,9 @@ body.dark-mode {
   color: var(--text-color);
   border-radius: 5px;
   background-color: var(--bg-color);
+  transition: 1s;
+  cursor: pointer;
 }
-
 .menu > li , .wide-menu > li{
   list-style: none;
   border: 2px solid transparent;
@@ -85,6 +92,11 @@ body.dark-mode {
   border: 2px solid var(--link-color);
   background-color: var(--bg-color);
   cursor: pointer;
+  transition: 3s;
+}
+.menu-btn:hover{
+  background: var(--text-color);
+  color: var(--bg-color);
 }
 .navbar > button{
   border: none;
@@ -138,7 +150,17 @@ nav {
   position: relative;
   font-weight: 800
 }
-
+.name::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  animation: showRight 5s ease forwards ;
+  animation-delay: 1s;
+}
 .name2{
   display: none;
 }
@@ -146,22 +168,54 @@ nav {
   font-size: 1.25rem;
   margin-bottom: 0.625rem;
   color: var(--text-color);
+  position: relative;
+}
+.profession::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: var(--bg-color);
+  animation: showRight 3s ease forwards;
+  animation-delay: 3s;
 }
 .cv-section{
   display: flex;
   justify-content: center;
   margin-bottom: 0.625rem;
-  animation-name: hero-section-one;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
 }
 .cv-btn{
   border: 2px solid var(--link-color);
   background-color: var(--link-color);
   color: var(--bg-color);
   padding: 6px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 2s;
+  position: relative;
 }
-
+.cv-btn:hover{
+  background-color: var(--bg-color);
+  color: var(--link-color);
+}
+.cv-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  animation: showRight 2s ease-in forwards;
+  animation-delay: 1s;
+}
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
 .hero-img{
   margin: 0 auto;
   position: relative;
@@ -173,7 +227,11 @@ nav {
   padding: 20px 0;
   width: 300px;
   height: 400px;
-  
+  transition: 1s;
+}
+.hero-img:hover{
+  width: 310px;
+  height: 410px;
 }
 @keyframes hero-img {
   0%   { left:0px; top:0px;}
