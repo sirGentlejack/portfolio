@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Bottom() {
   return (
     <div className="footer">
-      <h3 className="contact_me sub-topic">Contact Me</h3>
+      <h3 className="contact_me sub-topic ">Contact Me</h3>
       <div className="bottom-contact">
         <h1 className="bottom-contact-text">Lets talk about your project</h1>
         <Link to="/contact" className="contacts ">

@@ -7,7 +7,7 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [darkMode,setDarkMode] = useState(false);
 
@@ -23,7 +23,7 @@ function App() {
     <Router>
       <div className={`App ${darkMode ? "dark-mode" : "light-mode" }`}>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-
+        <ScrollToTop />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/projects" element={<Projects />} />

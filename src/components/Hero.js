@@ -1,9 +1,10 @@
 import React from "react";
 import Me from "../images/me2.jpg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div >
+    <div>
       <div className="hero">
         <div className="hero-section1">
           <h1 className="name">
@@ -18,8 +19,13 @@ export default function Hero() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="cv-btn"><b>Open CV</b></span>
+              <span className="cv-btn">
+                <b>Open CV</b>
+              </span>
             </a>
+            <Link to="/projects" className="cv-btn">
+              <b>Projects</b>
+            </Link>
           </div>
         </div>
         <img src={Me} alt="Myself" className="hero-section2 hero-img" />
