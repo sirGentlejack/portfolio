@@ -13,94 +13,95 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
   }
 
   return (
-    <div>
+    <div className="nav-bar">
       <hr />
       <div className={`navbar ${darkMode ? "dark-mode" : "light-mode"}`}>
-        
-          <a href="#" className="logo">FIC</a>
-          <nav ref={navRef}>
-            <ul className="menu">
-              <li>
-                <Link to="/">
-                  <b>Home</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/aboutMe">
-                  <b>About Me</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects">
-                  <b>Projects</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="contacts">
-                  <b>Contact Me</b>
-                </Link>
-              </li>
-            </ul>
+        <Link to="/" className="logo">
+          FIC
+        </Link>
+        <nav ref={navRef}>
+          <ul className="menu">
+            <li>
+              <Link to="/">
+                <b>Home</b>
+              </Link>
+            </li>
+            <li>
+              <Link to="/aboutMe">
+                <b>About Me</b>
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects">
+                <b>Projects</b>
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="contacts">
+                <b>Contact Me</b>
+              </Link>
+            </li>
+          </ul>
 
-            <button className="menu-btn menu-close">
-              <TiCancel className="menu-btn menu-close" onClick={showNavbar} />
-            </button>
-            <ul className="wide-menu">
-              <li>
-                <Link to="/">
-                  <b>Home</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/aboutMe">
-                  <b>About Me</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects">
-                  <b>Projects</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="contacts">
-                  <b>Contact Me</b>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          
-          <button onClick={toggleDarkMode} className="theme-btn">
-            {darkMode ? <CiLight className="theme" /> : <CiDark className="theme"/>}
-          </button>
-          <button >
-            <FiMenu className="menu-btn" onClick={showNavbar} />
+          <button className="menu-btn menu-close">
+            <TiCancel className="menu-btn menu-close" onClick={showNavbar} />
           </button>
           <ul className="wide-menu">
-              <li>
-                <Link to="/">
-                  <b>Home</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/aboutMe">
-                  <b>About Me</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects">
-                  <b>Projects</b>
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="contacts">
-                  <b>Contact Me</b>
-                </Link>
-              </li>
-            </ul>
+            <li>
+              <Link to="/">
+                <b>Home</b>
+              </Link>
+            </li>
+            <li>
+              <Link to="/aboutMe">
+                <b>About Me</b>
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects">
+                <b>Projects</b>
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="contacts">
+                <b>Contact Me</b>
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
-          
-          
-        
+        <button onClick={toggleDarkMode} className="theme-btn">
+          {darkMode ? (
+            <CiLight className="theme" />
+          ) : (
+            <CiDark className="theme" />
+          )}
+        </button>
+        <button>
+          <FiMenu className="menu-btn" onClick={showNavbar} />
+        </button>
+        <ul className="wide-menu">
+          <li>
+            <Link to="/">
+              <b>Home</b>
+            </Link>
+          </li>
+          <li>
+            <Link to="/aboutMe">
+              <b>About Me</b>
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects">
+              <b>Projects</b>
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="contacts">
+              <b>Contact Me</b>
+            </Link>
+          </li>
+        </ul>
       </div>
       <hr />
     </div>
