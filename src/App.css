@@ -5,10 +5,15 @@
   margin: 0;
 }
 :root {
-  --light: #eee;
-  --dark: black;
-  --white: #eeeeee;
+  --light: #F9F6EE;
+  --dark: #1B1212;
+  --white: #F9F6EE;
 }
+  /* --dark: #DA00F7; */
+  /* --dark: #20989C; */
+  /* --white: #eeeeee; */
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -143,7 +148,7 @@ nav {
 }
 /* hero section */
 .hero {
-  height: 80vh;
+  height: 83vh;
   display: flex;
   flex-direction: column;
   text-align: center;
