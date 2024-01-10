@@ -117,7 +117,7 @@ body.dark-mode {
 }
 nav {
   position: fixed;
-  top: 0;
+  top:0;
   left: 0;
   height: 100%;
   width: 50%;
@@ -132,6 +132,7 @@ nav {
   border: 5px double var(--link-color);
   border-top: 0px;
   border-left: 0px;
+  border-bottom: 0px;
   border-radius: 0 30px 30px  0;
   z-index: 1;
 }
@@ -557,10 +558,6 @@ nav {
 }
 
 @media screen and (min-width: 480px) {
-  .hero {
-    /* height: 90vh; */
-  }
-
   .name {
     font-size: 3.188rem;
     margin-top: 0.5rem;
@@ -596,9 +593,6 @@ nav {
     margin: 0 20px 20px 20px;
     text-indent: 4em;
     font-size: 1.563rem;
-  }
-  .service {
-    /* height: 100vh; */
   }
   .services-items {
     width: 300px;
@@ -645,15 +639,6 @@ nav {
     font-size: 3.563rem;
     margin: 5px 0 15px 20px;
     text-align: center;
-  }
-  .sections {
-    /* height: 35vh; */
-  }
-  .interest {
-    /* height: 20vh; */
-  }
-  .service {
-    /* height: 70vh; */
   }
   .services {
     flex-direction: row;
