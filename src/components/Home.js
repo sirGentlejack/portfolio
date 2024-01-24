@@ -17,7 +17,7 @@ export default function Home() {
         </p>
       </div>
       <div className="service sections">
-          <h3 className="sub-topic ">Services</h3>
+        <h3 className="sub-topic ">Services</h3>
         <div className="services">
           <div className="services-items">
             <h2>Design Website</h2>
@@ -54,10 +54,10 @@ export default function Home() {
           and solving challenges. I take pride in my ability to collaborate
           effectively with teams and to adapt to new environment and
           technologies.
+          <Link to="/aboutMe" className="read-more">
+            Read more...
+          </Link>
         </p>
-        <Link to="/aboutMe" className="read-more">
-          Read more...
-        </Link>
       </div>
     </div>
   );

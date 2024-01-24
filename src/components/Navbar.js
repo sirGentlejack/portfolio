@@ -46,7 +46,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
           <button className="menu-btn menu-close">
             <TiCancel className="menu-btn menu-close" onClick={showNavbar} />
           </button>
-          <ul className="wide-menu">
+          {/* <ul className="wide-menu">
             <li>
               <Link to="/">
                 <b>Home</b>
@@ -67,7 +67,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
                 <b>Contact Me</b>
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </nav>
 
         <button onClick={toggleDarkMode} className="theme-btn">

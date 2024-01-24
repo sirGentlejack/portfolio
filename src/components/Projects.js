@@ -17,13 +17,13 @@ export default function Projects(props) {
             <b>{item.title}</b>
           </span>
         </div>
-        <div>
+        <div className="project-sub2">
           {/* preview url */}
           <a
             href={item.url}
             target="_blank"
             rel="noreferrer"
-            style={{ color: "white" }}
+            className="project-name"
           >
             Preview
           </a>

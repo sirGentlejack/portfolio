@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutMe() {
     return(
         <>
-        <div>
+        <div className="about-me">
         <h3 className="sub-topic" id="about">About Me</h3>
         <p className="content">
           I am an individual with a diverse range of interests and experiences.
