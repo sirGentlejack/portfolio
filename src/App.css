@@ -39,6 +39,10 @@ a {
 body {
   background: var(--bg-color);
   font-family: 'Ubuntu', sans-serif;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 body.light-mode {
@@ -80,7 +84,7 @@ body.dark-mode {
   border: 2px solid transparent;
   padding: 3px;
   border-width: 3px 1.5px 0px 1.5px;
-  font-size: 23px;
+  font-size: 1.438rem; /* 23px */
   cursor: pointer;
 }
 .menu > li:hover,
@@ -380,7 +384,7 @@ nav {
   border-radius: 5px;
   transition: 2s;
 }
-.project > a{
+.project > .project-sub1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,7 +394,7 @@ nav {
   height: 100%;
   transition: transform 1.3s ease-in-out;
 }
-.project > a:hover{
+.project > .project-sub1:hover{
   transform: scale(1.2);
 }
 .project-img {
@@ -404,8 +408,22 @@ nav {
   animation-iteration-count: 1;
   position: relative;
 }
-.project > a:hover .project-img{
+.project > .project-img{
   transform: scale(1.2);
+}
+
+.project-github{
+  width: 2.125rem;
+  height: 2.125rem;
+  color: var(--bg-color);
+  background: transparent;
+}
+.project-github:hover {
+  width: 1rem;
+  height: 1rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 1s;
 }
 
 @keyframes project-img {

@@ -1,77 +1,43 @@
 import React from "react";
-import Opay from "../images/OpayScreenshot.png";
-import Lemo_B from "../images/lemo_B.png";
-import RealEstate from "../images/RealEstateScreenshot.png";
-import Quote from "../images/myQuotes.png";
-import meme from "../images/meme.png";
-import Travel from "../images/travelJournal.png";
-import Airbnb from "../images/AirbnbScreenshot.png";
-import Flak from "../images/FlakScreenshot.png";
+import { FaGithub } from "react-icons/fa";
 
-
-export default function Projects() {
+export default function Projects(props) {
+  const { item } = props;
   return (
     <div>
-      <h3 className="sub-topic" id="projects">My Most Recent Apps</h3>
-      <div className="grid-container">
-        <div className="project">
-          <a href="https://opay-mobile-application-look.vercel.app/" target="_blank" rel="noreferrer">
-            <img src={Opay} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Opay Demo</b></span>
-          </a>
+      <div className="project">
+        <div className="project-sub1">
+          <img
+            src={require(`../images/${item.coverImg}`)}
+            className="project-img"
+            alt="screenshot showing project"
+          />
+          <br />
+          <span className="project-name">
+            <b>{item.title}</b>
+          </span>
         </div>
-        <div className="project">
-          <a href="https://lemo-b-couture.vercel.app/" target="_blank" rel="noreferrer">
-            <img src={Lemo_B} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Lemo_B Couture</b></span>
+        <div>
+          {/* preview url */}
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "white" }}
+          >
+            Preview
           </a>
-        </div>
-        <div className="project" >
-          <a href="https://real-estate-website-challenge.vercel.app/" target="_blank" rel="noreferrer">
-            <img src={RealEstate} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Real Estate</b></span>
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://quote-app-three-dusky.vercel.app/" target="_blank" rel="noreferrer">
-            <img src={Quote} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Quote App</b></span>
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://mem-creator.vercel.app" target="_blank" rel="noreferrer">
-            <img src={meme} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Meme Creator</b></span>
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://travel-journal-five-rho.vercel.app/" target="_blank" rel="noreferrer">
-            <img src={Travel} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Travel Journal</b></span>
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://airbnd-demo.vercel.app/" target="_blank" rel="noreferrer">
-            <img src={Airbnb} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Airbnb Demo</b></span>
-          </a>
-        </div>
-        <div className="project">
-          <a href="https://flak-official.vercel.app" target="_blank" rel="noreferrer">
-            <img src={Flak} className="project-img" alt="screenshot showing project" />
-            <br />
-            <span className="project-name"><b>Flak skill A.</b></span>
+          {/* github url */}
+          <a
+            href="https://github.com/sirGentlejack"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub className=" project-github" />
           </a>
         </div>
       </div>
     </div>
   );
 }
-// 
+//
