@@ -29,7 +29,7 @@ export default function Projects(props) {
           </a>
           {/* github url */}
           <a
-            href="https://github.com/sirGentlejack"
+            href={item.GitHub}
             target="_blank"
             rel="noreferrer"
           >
