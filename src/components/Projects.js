@@ -25,7 +25,7 @@ export default function Projects(props) {
             rel="noreferrer"
             className="project-name"
           >
-            Preview
+            Live Preview
           </a>
           {/* github url */}
           <a

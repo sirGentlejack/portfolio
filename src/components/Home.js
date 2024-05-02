@@ -31,16 +31,16 @@ export default function Home() {
         <h3 className="sub-topic">Technologies</h3>
         <div className="tech-skills">
           <ul className="technologies">
-            <li>Reactjs</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javaScript</li>
+            <li className="tech-skill">Reactjs</li>
+            <li className="tech-skill">HTML</li>
+            <li className="tech-skill">CSS</li>
+            <li className="tech-skill"> javaScript</li>
           </ul>
           <ul className="technologies">
-            <li>TailwindCSS</li>
-            <li>Git Hub</li>
-            <li>Slack</li>
-            <li>Figma (UI/UX)</li>
+            <li className="tech-skill">TailwindCSS</li>
+            <li className="tech-skill">Git Hub</li>
+            <li className="tech-skill">BootStrap</li>
+            <li className="tech-skill">Figma (UI/UX)</li>
           </ul>
         </div>
       </div>
