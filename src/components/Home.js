@@ -1,6 +1,15 @@
 import React from "react";
 import Hero from "../components/Hero";
 import { Link } from "react-router-dom";
+import { FaBootstrap } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+// import { RiTailwindCssFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaFigma } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si"
 
 export default function Home() {
   return (
@@ -31,16 +40,16 @@ export default function Home() {
         <h3 className="sub-topic">Technologies</h3>
         <div className="tech-skills">
           <ul className="technologies">
-            <li className="tech-skill">Reactjs</li>
-            <li className="tech-skill">HTML</li>
-            <li className="tech-skill">CSS</li>
-            <li className="tech-skill"> javaScript</li>
+            <li className="tech-skill"><FaReact /> Reactjs</li>
+            <li className="tech-skill"> <FaHtml5 />HTML</li>
+            <li className="tech-skill"> <FaCss3Alt /> CSS</li>
+            <li className="tech-skill"> <IoLogoJavascript /> javaScript</li>
           </ul>
           <ul className="technologies">
-            <li className="tech-skill">TailwindCSS</li>
-            <li className="tech-skill">Git Hub</li>
-            <li className="tech-skill">BootStrap</li>
-            <li className="tech-skill">Figma (UI/UX)</li>
+            <li className="tech-skill"><SiTailwindcss /> TailwindCSS</li>
+            <li className="tech-skill"> <FaGithub />Git Hub</li>
+            <li className="tech-skill"><FaBootstrap /> BootStrap</li>
+            <li className="tech-skill"> <FaFigma /> Figma (UI/UX)</li>
           </ul>
         </div>
       </div>

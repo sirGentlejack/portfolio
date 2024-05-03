@@ -9,7 +9,7 @@ const Data= [
         id: 2,
         title: "Investment Company",
         coverImg: "RealEstateScreenshot.png",
-        url: "https://github.com/sirGentlejack/investment",
+        url: "https://investment-two.vercel.app/",
         GitHub: "https://github.com/sirGentlejack/real-estate-website-challenge"
     }
     // ,{
