@@ -12,13 +12,14 @@ const Data= [
         url: "https://investment-two.vercel.app/",
         GitHub: "https://github.com/sirGentlejack/real-estate-website-challenge"
     }
-    // ,{
-    //     id: 4,
-    //     title: "Quote App",
-    //     coverImg: "myQuotes.png",
-    //     url: "https://quote-app-three-dusky.vercel.app/",
-    //     GitHub: "https://github.com/sirGentlejack/quote-app"
-    // },{
+    ,{
+        id: 3,
+        title: "Cirkle App",
+        coverImg: "cirkleDemo.png",
+        url: "https://club-party-vibes.vercel.app/",
+        GitHub: "https://github.com/sirGentlejack/"
+    }
+    //,{
     //     id: 5,
     //     title: "Meme Creator",
     //     coverImg: "meme.png",
